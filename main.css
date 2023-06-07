@@ -1,0 +1,134 @@
+body {
+    margin: 0px;
+}
+
+header {
+    height: 70px;
+    display: block;
+}
+.logo {
+    width: 120px;
+    height: 60px;
+    cursor: pointer;
+    margin-left: 90px;
+    margin-top: 10px;
+}
+
+header .main-menu {
+    height: inherit;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu {
+    list-style-type: none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a { 
+    display: inline-block;
+    padding: 2px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: black;
+    font-family: 500;
+    /* font-size: 14pt; */
+    font-family: "Museo Sans", "Helvetica Neue", 
+    elvetica, Arial, sans-serif;;
+}
+
+.menu li a:hover {
+    color: orange;
+}
+
+.navbar-menu {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.createkoshel {
+    padding: 15px 20px;
+    margin-left: 150px;
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid;
+    border-color: rgb(109, 109, 109);
+    border-radius: 100px;
+    color: black;
+    opacity: 0.8;
+}
+
+.createkoshel:hover {
+    opacity: 1;
+}
+
+.vxod {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    transition: all .07s ease-in-out;
+    background-color: orange;
+    border-radius: 100px;
+    opacity: 0.9;
+    margin-left: 15px;
+}
+
+.vxod:hover {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+/* .logo {
+    width: 125px;
+    height: 60px;
+    cursor: pointer;
+} */
+
+/* header .main-menu {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    display: inline-block;
+    padding: 10px;
+}
+
+.navbar-menu {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.createkoshel {
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.vxod {
+    margin-left: 10px;
+    margin-right: 20px;
+    padding: 10px;
+}  */

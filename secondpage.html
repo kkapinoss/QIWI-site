@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>РГЗ Капинос Даниил Дмитриевич, ФБИ-12</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .foot {
+            display: block;
+            font-family: "Museo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 16px;
+            color: rgb(102, 102, 102);
+            text-overflow: ellipsis;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            margin-left: 90px;
+        }
+
+        .zvonok {
+            display: block;
+            font-family: "Museo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 16px;
+            color: rgb(102, 102, 102);
+            text-overflow: ellipsis;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            margin-left: 1140px;
+            margin-top: -45px;
+            position: absolute;
+            text-align: right;
+        }
+
+        .ph11{
+            height: auto;
+            width: 1400px;
+            margin-left: -40px;
+        }
+        .block1{
+            color: rgb(255, 255, 255);
+            width: 300px;
+            margin-top: -300px;
+            margin-left: 40px;
+            font-style: italic;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .block2{
+            margin-top: 80px;
+            margin-left: 200px;
+            font-size: 16px;
+            width: 900px;
+            height: auto;
+        }
+        .zag{
+            font-size: 24px;
+            padding: 10px;
+            color: black;
+        }
+        .button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: darkorange;
+            width: 200px;
+            height: 60px;
+            margin-top: 2.4rem;
+            font-weight: 600;
+            font-size: 14px;
+            color: #fff;
+            text-decoration: none;
+            font-family: "Museo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        .b1{
+            margin-left: 180px;
+        }
+        .b2{
+            margin-left: 420px;
+            margin-top: -60px;
+        }
+        .b3{
+            margin-left: 660px;
+            margin-top: -60px;
+        }
+        .b4{
+            margin-left: 900px;
+            margin-top: -60px;
+        }
+        .cen{
+            text-align: left;
+            font-family: "Museo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin-left: 80px;
+        }
+        .button2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: black;
+            border-radius: 10px;
+            width: 200px;
+            height: 180px;
+            margin-top: 2.4rem;
+            font-weight: 600;
+            font-size: 14px;
+            color: #fff;
+            text-decoration: none;
+            margin-top: -20px;
+        }
+        .a1{
+            margin-left: 180px;
+            margin-top: -20px;
+        }
+        .a2{
+            margin-left: 420px;
+            margin-top: -180px;
+        }
+        .a3{
+            margin-left: 660px;
+            margin-top: -180px;
+        }
+        .a4{
+            margin-left: 900px;
+            margin-top: -180px;
+        }
+        .zag2{
+            font-size: 24px;
+            color: orange;
+            font-family: "Museo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        .text{
+            font-size: 12px;
+            text-align: center;
+        }
+       
+        .cen2{
+            margin-left: 270px;
+        } 
+        .button3{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: darkorange;
+            border-radius: 10px;
+            width: 300px;
+            height: 50px;
+            font-weight: 600;
+            font-size: 14px;
+            color: #fff;
+            text-decoration: none;
+            margin-top: 20px;
+            margin-left: 90px;
+            font-family: "Museo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        table{
+            border: 10px solid;
+            border-color: #fff;
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            color: black;
+            margin-left: 20px;
+            width: 90%;
+            height:auto;
+            background-color: white;
+            font-family: "Museo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+        }
+        th, td {
+            border: 1px solid #fff;
+            padding: 4px;
+            text-align: center;
+        }
+        .cen3{
+        margin-left: 90px;
+        font-size: 18px;
+        font-family: "Museo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        footer {
+            position: fixed;          
+            right: 0px;
+            bottom: 0px;
+            left: 0px;  
+            z-index: 1;      
+        }
+
+    </style>
+
+    <script>
+        function Kurs(){
+    let date=['08.06.2023','07.06.2023','06.06.2023','05.06.2023','02.06.2023',
+    '01.06.2023','31.05.2023','30.05.2023','29.05.2023','26.05.2023','25.05.2023',
+    '24.05.2023','23.05.2023','22.05.2023','19.05.2023','18.05.2023','17.05.2023',
+    '16.05.2023','15.05.2023','12.04.2023'];
+    let change=[719,685,681.50,658.50,666.00,671.50,664.50,658,651.50,662,657,669,
+    618,605,608.50,604.50,605.50,613,615.50,616.50];
+
+    let table=document.getElementById('kurs-exchange'); 
+    for (i = 0; i <change.length; i++){
+       let tr = document.createElement("tr");
+       let td1 = document.createElement("td");
+       td1.innerHTML = date[i];
+       let td2 = document.createElement("td");
+       td2.innerHTML = change[i];
+       tr.appendChild(td1);
+       tr.appendChild(td2);
+       table.appendChild(tr);
+    }
+    let sum=0;
+      for(let i=0; i<change.length; i++){
+        sum = sum+change[i];
+      }
+      let average = sum / change.length;
+      let min = Math.min.apply(Math,change)
+      let max = Math.max.apply(Math,change)
+      document.getElementById('details').innerHTML='Среднее значение: ' + average +"<br />"+ 'Минимальное значение: ' + min +"<br />" +'Максимальное значение: ' + max;
+  }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="main-menu">
+            <a href="index.html" class="logo"><img src="https://static.qiwi.com/img/qiwi_com/header/qiw_logo_web.svg" alt=""></a>
+            
+            <div class="navbar-menu">
+                <ul class="menu">
+                    <li><a href="firstpage.html">О компании</a></li>
+                    <li><a href="secondpage.html">Основные финансовые показатели</a></li>
+                    <li><a href="thirdpage.html">Контактные данные</a></li>
+                    <li><a href="fourthpage.html">Видео</a></li>
+                </ul>
+                
+                <!-- Кнопка создать кошелек -->
+                <a href="#" class="createkoshel">Создать кошелек</a>
+                
+                <!-- Кнопка войти -->
+                <a href="#" class="vxod">Войти</a>
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <h1 style="margin-left: 90px;  font-family: Museo Sans, Helvetica Neue, Helvetica, Arial, sans-serif;">Основные финансовые показатели</h1>
+    
+            <button class="button3" onclick="Kurs()" style="font-family: Museo Sans, Helvetica Neue, Helvetica, Arial, sans-serif;">Стоимость акций за апрель 2023</button>
+            <table class="tab" id="kurs-exchange"></table>
+    
+    
+            <div>
+              <h2 class="zag cen">Показатели акций</h2>
+              <div class="cen3" id="details"></div>
+            </div>
+    
+          </div>
+    </main>
+
+    <footer>
+        <div>
+            <p class="foot">
+                "© 2023, КИВИ Банк (АО), лицензия ЦБ РФ № 2241"
+                <br>
+                "Россия, 117648, г. Москва, мкр. Чертаново Северное, д. 1А, корп. 1" 
+            </p>
+
+            <p class="zvonok">
+                Для звонков по России (бесплатно)
+                <br>
+                8 800 707-77-59
+            </p>
+        </div>
+    </footer>
+    
+</body>
+</html>

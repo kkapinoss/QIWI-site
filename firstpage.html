@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>РГЗ Капинос Даниил Дмитриевич, ФБИ-12</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+         /*Создаем слайд-шоу акций*/
+         .adaptivSlayder {
+            position: relative;
+            max-width:1000px;
+            padding: 5px 60px;
+            margin: 65px auto;
+            box-shadow: 0 9px 18px -4px rgba(50, 52, 48, 0.7);
+            border-radius: 7px;
+        }
+        .adaptivSlayder input[name="kadoves"] {
+            display: none;
+        }
+        .kadoves {
+            position: absolute;
+            left: 0;
+            bottom: -35px;
+            text-align: center;
+            width: 100%;
+        }
+        .kadoves label {
+            display: inline-block;
+            width: 7px;
+            height: 7px;
+            cursor: pointer;
+            margin: 0 2px;
+            box-shadow: 0 0 3px 0 rgba(50, 52, 48, 0.7);
+            border-radius: 55%;
+            border: 4px solid darkorange;
+            background-color: rgb(255, 182, 45);
+        }
+        #slaid1:checked~.kadoves label[for="slaid1"] {
+            background-color: white;
+        }
+        #slaid2:checked~.kadoves label[for="slaid2"] {
+            background-color: white;
+        }
+        #slaid3:checked~.kadoves label[for="slaid3"] {
+            background-color: white;
+        }
+        #slaid4:checked~.kadoves label[for="slaid4"] {
+            background-color: white;
+        }
+
+        .adaptivSlayderlasekun {
+            overflow: hidden;
+        }
+        .abusteku-deagulus {
+            display: flex;
+            width: 100%;
+            transition: all 0.6s;
+        }
+        .abusteku-deagulus img {
+            width: 100%;
+            flex-shrink:0;
+        }
+        #slaid1:checked~adaptivSlayderlasekun abusteku-deagulus {
+            transform: translate(0);
+        }
+        #slaid2:checked~.adaptivSlayderlasekun .abusteku-deagulus {
+            transform: translateX(-100%);
+        }
+        #slaid3:checked~.adaptivSlayderlasekun .abusteku-deagulus {
+            transform: translateX(-200%);
+        }
+        #slaid4:checked~.adaptivSlayderlasekun .abusteku-deagulus {
+            transform: translateX(-300%);
+        }
+
+        .company {
+            display: block;
+            font-family: "Museo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 18px;
+            font-weight: 200;
+            line-height: 32px;
+            color: rgb(0, 0, 0);
+            text-overflow: ellipsis;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            text-align: justify;
+            margin-bottom: 45px;
+            margin: 90px;
+        }
+
+        .photo1 {
+            position: absolute;
+            margin-left: 890px;
+            margin-top: -362px;
+        }
+
+        .company2 {
+            display: block;
+            font-family: "Museo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 18px;
+            font-weight: 200;
+            line-height: 32px;
+            color: rgb(0, 0, 0);
+            text-overflow: ellipsis;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            text-align: justify;
+            margin-bottom: 45px;
+            margin: 90px;
+        }
+
+        .foot {
+            display: block;
+            font-family: "Museo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 16px;
+            color: rgb(102, 102, 102);
+            text-overflow: ellipsis;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            margin-left: 90px;
+        }
+
+        .zvonok {
+            display: block;
+            font-family: "Museo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 16px;
+            color: rgb(102, 102, 102);
+            text-overflow: ellipsis;
+            overflow: hidden;
+            overflow-wrap: break-word;
+            margin-left: 1140px;
+            margin-top: -45px;
+            position: absolute;
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="main-menu">
+            <a href="index.html" class="logo"><img src="https://static.qiwi.com/img/qiwi_com/header/qiw_logo_web.svg" alt=""></a>
+            
+            <div class="navbar-menu">
+                <ul class="menu">
+                    <li><a href="firstpage.html">О компании</a></li>
+                    <li><a href="secondpage.html">Основные финансовые показатели</a></li>
+                    <li><a href="thirdpage.html">Контактные данные</a></li>
+                    <li><a href="fourthpage.html">Видео</a></li>
+                </ul>
+                
+                <!-- Кнопка создать кошелек -->
+                <a href="#" class="createkoshel">Создать кошелек</a>
+                
+                <!-- Кнопка войти -->
+                <a href="#" class="vxod">Войти</a>
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+        <section class="content">
+
+            <div class="adaptivSlayder">
+                <input type="radio" name="kadoves" id="slaid1" checked>
+                <input type="radio" name="kadoves" id="slaid2">
+                <input type="radio" name="kadoves" id="slaid3">
+                <input type="radio" name="kadoves" id="slaid4">
+
+                <div class="kadoves">
+                    <label for="slaid1"></label>
+                    <label for="slaid2"></label>
+                    <label for="slaid3"></label>
+                    <label for="slaid4"></label>
+                </div>
+
+                <div class="adaptivSlayderlasekun">
+                    <div class="abusteku-deagulus">
+                        <img src="Снимок.PNG"/>
+                        <img src="Снимок1.PNG"/>
+                        <img src="Снимок2.PNG"/>
+                        <img src="Снимок3.PNG"/>
+                    </div>
+                </div>
+            </div>
+          </section>
+
+          <div class="company">
+            <hr size="3" color="darkorange" width="400px">
+            <h1>Что такое QIWI?</h1>
+
+            <p>
+                QIWI – ведущий провайдер платёжных и финансовых сервисов нового<br> поколения в России и странах СНГ, 
+                которому принадлежит интегрированная<br> платежная сеть, позволяющая производить платежи по мобильным,<br> 
+                онлайн- и офлайн-каналам.
+            </p>
+
+            <h2>Предназначение QIWI</h2>
+
+            <p>
+                Мы соединяем клиентов, предоставляя уникальные финансово-технологиче-<br> ские решения, 
+                чтобы невозможное стало простым и доступным.
+            </p>
+
+            <div class="photo1">
+                <img src="https://static.qiwi.com/qcms/files/1598880798389_652_65LARCubOOsaGgr.svg" alt="">
+            </div>
+          </div>
+
+          <div class="company2">
+            <h2><hr size="3" color="darkorange" width="400px">История QIWI</h2>
+
+            <p>
+                <b>2007<br></b>
+                Сергей Солонин, Борис Ким и Андрей Романенко создают компанию Qiwi в результате слияния двух платежных систем — «e-port» и «ОСМП»
+                На терминалах Qiwi был запущен сервис «Личный кабинет», который впоследствии был переименован в «Qiwi Кошелёк»<br>               
+                <b>2008<br></b>
+                Cостоялся запуск бренда Qiwi и круглосуточной единой службы поддержки пользователей. <br>
+                <b>2010<br></b>
+                В состав группы Qiwi вошёл банк «1-й Процессинговый», который в 2011 году был переименован в ЗАО «Киви Банк». <br>
+                <b>2012<br></b>
+                В ноябре Visa и Qiwi подписали соглашение о глобальном партнёрстве, в рамках которого «Qiwi Кошелёк» был преобразован в кобрендинговый продукт Visa Qiwi Wallet. <br>
+                <b>2013<br></b>
+                Qiwi вышла на IPO. Размещение произошло на американской бирже NASDAQ, акции торговались по цене 17 $ за штуку. <br>
+                <b>2015<br></b>
+                В июле группа Qiwi стала 100%-м акционером платежной системы Contact. <br>
+                <b>2016<br></b>
+                В апреле в процессинг Qiwi была внедрена технология блокчейн. <br>
+                В ноябре Qiwi первая в России запустила карту рассрочки «Совесть». Бизнес-модель «Совести» основана на получении комиссии от ретейлеров за привлечение клиентов. <br>
+                <b>2017<br></b>
+                Сооснователь платёжного сервиса Qiwi Андрей Романенко покинул руководство компании и продал принадлежащую ему долю акций. <br>
+                В октябре компания Qiwi выкупила у банка «Открытие» права на бренд и программное обеспечение банковских сервисов Рокетбанк (300 тыс. клиентов, сумма сделки составила 700 млн руб.) и «Точка». <br>
+                <b>2018<br></b>
+                В июне банк «Открытие», группа Qiwi и «Точка» объявили о подписании соглашения о сотрудничестве и создании совместного предприятия АО «Точка». <br>
+                <b>2020<br></b>
+                Qiwi продала проект карты «Совесть» Совкомбанку за 6,5 млрд рублей. <br>
+                <b>2021<br></b>
+                Qiwi продала свою долю в совместном предприятии банку «Открытие», сумма сделки составила 4,95 млрд рублей. <br>
+                <b>2022<br></b>
+                В декабре Qiwi выкупила агентство интернет-рекламы Realweb (до 10% всего рынка интернет-рекламы в Рф). Сумму сделки эксперты оценивали в 1-2,5 млрд руб.
+
+            </p>
+
+          </div>
+
+    </main>
+
+    <footer>
+        <div>
+            <p class="foot">
+                "© 2023, КИВИ Банк (АО), лицензия ЦБ РФ № 2241"
+                <br>
+                "Россия, 117648, г. Москва, мкр. Чертаново Северное, д. 1А, корп. 1" 
+            </p>
+
+            <p class="zvonok">
+                Для звонков по России (бесплатно)
+                <br>
+                8 800 707-77-59
+            </p>
+        </div>
+    </footer>
+    
+</body>
+</html>
